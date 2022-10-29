@@ -7,6 +7,7 @@
 // MILESTONE 1
 // Stampare all'interno di una lista, un item per ogni todo.
 // Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
+// FATTO
 
 // MILESTONE 2
 // Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
@@ -20,18 +21,23 @@ createApp({
 
     data(){
         return{
-            compito1: {
-                text: "compito uno da fare",
-                done: false,
-            },
-            compito2: {
-                text: "compito due da fare",
-                done: false,
-            },
-            compito3: {
-                text: "compito tre da fare",
-                done: true,
-            },
+            tasksArray: [
+                {
+                    text: "compito uno da fare",
+                    done: false,
+                },
+
+                {
+                    text: "compito due da fare",
+                    done: false,
+                },
+
+                {
+                    text: "compito tre da fare",
+                    done: true,
+                },
+            ],
+
         }
     },
 

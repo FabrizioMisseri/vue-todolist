@@ -34,7 +34,7 @@ ul{
     margin-bottom: 2rem;
 }
 
-.list-container li{
+.list li{
     display: flex;
     justify-content: space-between;
     font-size: 1.25rem;
@@ -50,4 +50,5 @@ ul{
 
 .task-done {
     text-decoration: line-through;
+    color: red;
 }

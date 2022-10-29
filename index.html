@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/stylr.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.41/vue.global.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
 
     <!-- APP -->
-    <div class="app">
+    <div id="app">
 
         <section id="todo-list">
 
@@ -31,18 +31,11 @@
 
                 <ul class="list">
 
-                    <li>
-                        <span>ciao</span>
-                        <span class="task-delete">&cross;</span>
-                    </li>
+                    <li v-for="(task, index) in tasksArray">
+                        <span :class="task.done ? 'task-done' : '' ">
+                            {{task.text}}
+                        </span>
 
-                    <li>
-                        <span>sono</span>
-                        <span class="task-delete">&cross;</span>
-                    </li>
-
-                    <li>
-                        <span>Fabrizio</span>
                         <span class="task-delete">&cross;</span>
                     </li>
 
