@@ -19,8 +19,13 @@
             <!-- dati input -->
             <div class="data-input">
 
-                <input type="text" placeholder="inserisci nuovo compito">
-                <button>carica</button>
+                <input type="text" 
+                    placeholder="inserisci nuovo compito"
+                    v-model="newTask">
+
+                <button @click="addNewTask">
+                    carica
+                </button>
 
             </div>
             <!-- / dati input -->
