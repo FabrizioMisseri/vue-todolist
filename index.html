@@ -36,7 +36,10 @@
                             {{task.text}}
                         </span>
 
-                        <span class="task-delete">&cross;</span>
+                        <span class="task-delete"
+                            @click="deleteTask(index)">
+                            &cross;
+                        </span>
                     </li>
 
                 </ul>
