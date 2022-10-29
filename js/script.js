@@ -20,7 +20,18 @@ createApp({
 
     data(){
         return{
-
+            compito1: {
+                text: "compito uno da fare",
+                done: false,
+            },
+            compito2: {
+                text: "compito due da fare",
+                done: false,
+            },
+            compito3: {
+                text: "compito tre da fare",
+                done: true,
+            },
         }
     },
 
